@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import API from '../../API'
-
+import Kanbanboard from './components/Kanbanboard'
 
 function App() {
   const [data, setData] = useState([])
@@ -19,6 +19,8 @@ function App() {
 
   return (
     <>
+      <Kanbanboard />
+      
      
     </>
   )
