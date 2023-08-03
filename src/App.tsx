@@ -1,29 +1,8 @@
-import { useEffect, useState } from 'react'
 import './App.css'
-import API from '../../API'
-import Kanbanboard from './components/Kanbanboard'
+import KanbanBoard from './components/KanbanBoard'
 
 function App() {
-  const [data, setData] = useState([])
-
-  const getData = async () => {
-    const {data} = await API.get('http://localhost:8000/api/jobs/');
-    setData(data)
-  }
-
-  useEffect(() => {
-    getData();
-  }, [])
-
-  console.log(data)
-
-  return (
-    <>
-      <Kanbanboard />
-      
-     
-    </>
-  )
+  return <KanbanBoard />;
 }
 
-export default App
+export default App;
