@@ -2,17 +2,12 @@
 import { Link } from 'react-router-dom';
 
 type SideNavProps = {
-    isOpen: boolean;
+  isOpen: boolean;
 }
 
 const SideNav: React.FC<SideNavProps> = ({ isOpen }) => {
   return (
-    <div
-      className={`fixed inset-y-0 left-0 transform transition-transform duration-200 ease-in-out
-        ${isOpen ? 'translate-x-0' : '-translate-x-full'}
-        w-64 bg-white p-4 shadow-md`}
-    >
-      <h2 className="text-2xl font-semibold text-black">Menu</h2>
+    <nav className={`h-screen bg-gray-800 w-64 fixed top-0 left-0 p-4 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}>
       <ul className="mt-8 space-y-4">
         <li>
           <Link to="/jobs" className="text-gray-700">
@@ -25,7 +20,7 @@ const SideNav: React.FC<SideNavProps> = ({ isOpen }) => {
           </Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
