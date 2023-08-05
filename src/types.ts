@@ -10,3 +10,12 @@ export type Task = {
   columnId: Id;
   content: string;
 };
+
+export type Job = {
+  id: Id;
+  columnId: Id;
+  content: string;
+  companyName: string;
+  jobTitle: string;
+  jobURL: string;
+};
