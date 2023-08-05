@@ -24,7 +24,7 @@ const App: React.FC = () => {
           {isOpen ? 'Close Menu' : 'Open Menu'}
         </button>
         <SideNav isOpen={isOpen} />
-        <div className={`ml-64 transition-all ${isOpen ? 'pl-64' : 'pl-0'}`}>
+        <div className={`ml-5 transition-all ${isOpen ? 'pl-64' : 'pl-0'}`}>
           <Routes>
             <Route path="/jobs" element={<Jobs />} />
             <Route path="/tasks" element={<Tasks />} />
