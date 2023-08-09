@@ -11,7 +11,7 @@ interface Props {
   deleteColumn: (id: Id) => void;
   updateColumn: (id: Id, title: string) => void;
   createJob: (columnId: Id) => void;
-  updateJob: (id: Id, content: string) => void;
+  updateJob: (id: Id, job: Job) => void;
   deleteJob: (id: Id) => void;
   jobs: Job[];
 }
