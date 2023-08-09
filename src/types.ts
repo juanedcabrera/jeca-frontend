@@ -19,3 +19,13 @@ export type Job = {
   jobTitle: string;
   jobURL: string;
 };
+
+export interface Contact {
+  id: number;
+  content: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  company: string;
+  jobTitle: string;
+}

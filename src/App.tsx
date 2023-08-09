@@ -5,6 +5,7 @@ import SideNav from './components/SideNav';
 import Jobs from './pages/Jobs';
 import Tasks from './pages/Tasks';
 import './App.css';
+import Contacts from './pages/Contacts';
 
 const App: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -28,6 +29,7 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/jobs" element={<Jobs />} />
             <Route path="/tasks" element={<Tasks />} />
+            <Route path="/contacts" element={<Contacts />} />
           </Routes>
         </div>
       </div>
