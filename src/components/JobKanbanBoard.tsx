@@ -168,12 +168,12 @@ function JobKanbanBoard() {
     setJobs(newJobs);
   }
 
-  function updateJob(id: Id) {
+  function updateJob(id: Id, updatedJob: Partial<Job>) {
     const newJobs = jobs.map((job) => {
       if (job.id !== id) return job;
-      return { ...job, job, companyName: '', jobTitle: '', jobURL: '' };
+      return { ...job, ...updatedJob };
     });
-
+  
     setJobs(newJobs);
   }
 
