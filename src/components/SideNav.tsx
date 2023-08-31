@@ -24,6 +24,11 @@ const SideNav: React.FC<SideNavProps> = ({ isOpen }) => {
             Contacts
           </Link>
         </li>
+        <li>
+          <Link to="/documents" className="text-gray-700">
+            Documents
+          </Link>
+        </li>
       </ul>
     </nav>
   );
